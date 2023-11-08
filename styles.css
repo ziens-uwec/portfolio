@@ -58,6 +58,8 @@ main>img{
 @media (min-width: 1000px){
     main{
         display:grid;
+        grid-template-columns:2;
+        grid-template-rows: 4;
     }
     div{
         grid-column-start: 1;
@@ -65,13 +67,10 @@ main>img{
         width: 45%;
     }
     nav>img{
-        
+        padding:0.3rem;
     }
     .headnav{
-        
-    }
-    .footnav{
-
+        align-content:flex-start;
     }
     main>img{
         width: 46%;
