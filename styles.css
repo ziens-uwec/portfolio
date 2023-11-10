@@ -1,9 +1,14 @@
 body{
     background-color: #000;
-    background-image: linear-gradient(90deg, #000 85%, #00d9ff);
+    background-image: linear-gradient(90deg, #000 80%, #00b8d9);
     margin:0;
 }
-p,h2,h3,h4{
+h2,h3,h4{
+    color:white;
+    font-family: 'Ubuntu', sans-serif;
+    font-size:xx-large;
+}
+p{
     color:white;
     font-family: 'Ubuntu', sans-serif;
 }
@@ -44,8 +49,7 @@ nav>a{
 }
 div{
     border: 3px solid #00c4ff;
-    width:90%;
-    margin: 0.5rem;
+    margin: 1rem;
 }
 div>img{
     max-width: 100%;
@@ -55,16 +59,13 @@ main>img{
     max-width: 96%;
     align-items: center;
 }
+nav>a:hover,nav>a:focus{
+    text-decoration: underline;
+}
 @media (min-width: 1000px){
     main{
-        display:grid;
-        grid-template-columns:2;
-        grid-template-rows: 4;
-    }
-    div{
-        grid-column-start: 1;
-        grid-column-end: 2;
-        width: 45%;
+        display:flex;
+        align-content: space-between;
     }
     nav>img{
         padding:0.3rem;
@@ -72,9 +73,16 @@ main>img{
     .headnav{
         align-content:flex-start;
     }
-    main>img{
-        width: 46%;
-        grid-column-start: 2;
-        grid-column-end: 3;
+    main section{
+        flex-basis: 49%;
+        width:48%;
+        display:flex;
+        flex-flow: column;
+    }
+    main img{
+        padding:0.25rem;
+    }
+    nav>a{
+        vertical-align: middle;
     }
 }
